@@ -4,7 +4,7 @@ En caso de presentar alguna duda, por favor, ponerse en contacto con dfernandezm
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FAS-MDE-Isolate-Machine%2Fazuredeploy.json)
 
-Este playbook está diseñadp para ejecutar un incidentee desde Microsoft Sentinel. Correlacionará los host de un incidente de Microsoft Sentinel con las máquinas en Microsoft Dedender y las aislará en cuarentena. Se añadirá un mensaje sobre el incidente indicando las máquinas afectadas. 
+Este playbook está diseñado para ejecutar un incidentee desde Microsoft Sentinel. Correlacionará los host de un incidente de Microsoft Sentinel con las máquinas en Microsoft Dedender y las aislará en cuarentena. Se añadirá un mensaje sobre el incidente indicando las máquinas afectadas. 
 ![IsolateMachine_Demo_1](./images/IsolateMachine_Demo_1.png)
 
 ### Requisitos
@@ -34,7 +34,7 @@ Ingrese en "**Application permissions**" y busque "**Machine.Isolate**". Luego, 
 
 ![IsolateMachine_App_Registration_6](./images/IsolateMachine_App_Registration_6.png)
 
-Asigue el consentimiento del permiso asignado a través de "**Grant admin consent for (name)**".
+Asigue el consentimiento del permiso a través de "**Grant admin consent for (name)**".
 
 ![IsolateMachine_App_Registration_7](./images/IsolateMachine_App_Registration_7.png)
 
@@ -111,17 +111,17 @@ Continue y haga click en "**Review + assign**
 Luego de que su Logic App despligue correctamente, se creará una conección al key vault creado, para lo cuál necesitará el acceso para tener acceso al registro de la aplicación. 
 
 En el "**Access policies**" del key vault creado, haga click en "**Create**".
-![IsolateMachine_Key_Vault_Access_1](./images/IsolateMachine_Key_Vault_1.png)
+![IsolateMachine_Key_Vault_Access_1](./images/IsolateMachine_Key_Vault_Access_1.png)
 
 Seleccione el checkbox de "**Get**"  debajo de "**Secret permissions**", y haga click en "**Next**".
-![IsolateMachine_Key_Vault_Access_2](./images/IsolateMachine_Key_Vault_2.png)
+![IsolateMachine_Key_Vault_Access_2](./images/IsolateMachine_Key_Vault_Access_2.png)
 
 Pegue "**AS-MDE-Isolate-Machine** dentro del buscador y seleccione su logic app. 
 
-![IsolateMachine_Key_Vault_Access_3](./images/IsolateMachine_Key_Vault_3.png)
+![IsolateMachine_Key_Vault_Access_3](./images/IsolateMachine_Key_Vault_Access_3.png)
 
 Luego en la sección de "**Review + create**" , haga click en "**Create**".
 
-![IsolateMachine_Key_Vault_Access_4](./images/IsolateMachine_Key_Vault_4.png)
+![IsolateMachine_Key_Vault_Access_4](./images/IsolateMachine_Key_Vault_Access_4.png)
 
 
