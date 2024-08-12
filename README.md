@@ -1,5 +1,4 @@
 
-<img src="logic_app_logo.png" alt="LogicApps Logo" width="350" height="200">
 
 # Acerca de este catálogto de Logic Apps
 
