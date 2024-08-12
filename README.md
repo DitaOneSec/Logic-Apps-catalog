@@ -1,6 +1,6 @@
 
 
-# Acerca de este catálogto de Logic Apps
+# Acerca de este catálogo de Logic Apps
 
 Este repositorio contiene ejemplos de flujos de trabajo de automatización y respuesta de seguridad, diseñados para mejorar las operaciones de ciberseguridad. Cada carpeta incluye una plantilla ARM de un flujo de trabajo que se activa utilizando un desencadenador de Microsoft Sentinel.
 

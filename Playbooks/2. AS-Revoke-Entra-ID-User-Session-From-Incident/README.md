@@ -4,13 +4,19 @@ En caso de presentar alguna duda, por favor, ponerse en contacto con dfernandezm
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FAS-Revoke-Azure-AD-User-Session-From-Incident%2Fazuredeploy.json)
 
-Este playbook está diseñado para ejecutar un incidentee desde Microsoft Sentinel. Correlacionará los host de un incidente de Microsoft Sentinel con las máquinas en Microsoft Dedender y las aislará en cuarentena. Se añadirá un mensaje sobre el incidente indicando las máquinas afectadas. 
-![RevokeUserSession_Demo_1](./images/IsolateMachine_Demo_1.png)
+Este playbook está diseñado para ejecutarse desde un incidente de Microsoft Sentinel. Buscará los usuarios de Azure AD asociados con las entidades de la cuenta del incidente y revocará sus sesiones. Se agregará al Incidente un comentario indicando los usuarios afectados.
+
+![RevokeUserSession_Demo_1](./images/RevokeUserSession_Demo_1.png)
+
+![RevokeUserSession_Demo_2](./images/RevokeUserSession_Demo_2.png)
+
 
 ### Requisitos
 
 * Tener un rol de grant admin para asignara permisos a la aplicación que se creará más adelante.
 * Acceso como Key Vault Administrator para crear y configurar un cliente secreto. 
+
+
 
 ### Configuración 
 
