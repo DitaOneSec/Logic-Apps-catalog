@@ -30,7 +30,7 @@ Para el "Azure Log Analytics Data Collector", deberás añadir el ID del área d
 
 1. Descarga la herramienta y ejecuta el script de PowerShell.
 
-[![Download](./Download.png)](https://aka.ms/Playbook-ARM-Template-Generator)  
+[![Download](./src/Download.png)](https://aka.ms/Playbook-ARM-Template-Generator)  
    
 2. Extrae la carpeta y abre el archivo `Playbook_ARM_Template_Generator.ps1` en Visual Studio Code, Windows PowerShell o PowerShell Core.
 
