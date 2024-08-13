@@ -1,7 +1,6 @@
 # AS-Azure-AD-Disable-User
-Author: Accelerynt
 
-For any technical questions, please contact dfernandezm@onesec.mx
+Para cualquier duda técnica consulte a dfernandezm@onesec.mx
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FAS-Azure-AD-Disable-User%2Fazuredeploy.json)
 
