@@ -4,7 +4,7 @@ Para cualquier consulta técnica, por favor contactar dfernandezm@onesec.one
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FAS-Import-AD-Group-Users-to-MS-Watchlist%2Fazuredeploy.json)
 
-Este playbook está diseñado para ejecutarse según un cronograma. Agregará los usuarios de un grupo específico de Azure Active Directory a una lista de seguimiento de Microsoft Sentinel.
+Este playbook está diseñado para obtener las entidades de un incidente de Sentinel y agregarlo a una Watchlist.
 
 ![AS_Group_Watchlist_Demo](Images/AS_Group_Watchlist_Demo.png)
 
@@ -19,21 +19,7 @@ Los siguientes elementos son necesarios en la configuración de la plantilla dur
 
 * Un [Microsoft Sentinel workspace Id](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks/AS-Import-AD-Group-Users-to-MS-Watchlist#microsoft-sentinel-workspace-id)
 
-# 
-### Configuración
 
-#### Azure Active Directory Group Id:
-
-Vaya a la página Grupos de Azure Active Directory:
-https://portal.azure.com/#view/Microsoft_AAD_IAM/GroupsManagementMenuBlade/~/AllGroups
-
-Cree un nuevo grupo o localice el grupo existente que desea usar con este manual y haga clic en el nombre.
-
-![AS_Group_Watchlist_Group_Id_1](Images/AS_Group_Watchlist_Group_Id_1.png)
-
-Desde la página "**Overview**" del grupo, copie el valor  "**Object Id**" y guárdelo para la implementación.
-
-![AS_Group_Watchlist_Group_Id_2](Images/AS_Group_Watchlist_Group_Id_2.png)
 
 #### Create a Microsoft Sentinel Watchlist:
 
@@ -120,23 +106,10 @@ Haga clic en el botón “**Edit**” Esto nos llevará al Diseñador de aplicac
 
 ![AS_Group_Watchlist_Deploy_4](Images/AS_Group_Watchlist_Deploy_4.png)
 
-Antes de que el libro de estrategias pueda ejecutarse correctamente, será necesario autorizar la conexión de Azure AD utilizada en el segundo paso y la conexión de Microsoft Sentinel utilizada en el cuarto y noveno paso, o se pueden seleccionar alternativamente las conexiones autorizadas existentes.
+Antes de que el libro de estrategias pueda ejecutarse correctamente, será necesario autorizar  la conexión de Microsoft Sentinel utilizada en el cuarto y noveno paso, o se pueden seleccionar alternativamente las conexiones autorizadas existentes.
 
 ![AS_Group_Watchlist_Deploy_5](Images/AS_Group_Watchlist_Deploy_5.png)
 
-Para validar la conexión de Azure AD, expanda el segundo paso denominado " Conexiones " y haga clic en el ícono de signo de exclamación junto al nombre que coincide con el libro de estrategias.
-                                                                                                
-![AS_Group_Watchlist_Deploy_6](Images/AS_Group_Watchlist_Deploy_6.png)
-
-Cuando se le solicite, inicie sesión para validar la conexión.
-
-
-
-![AS_Group_Watchlist_Deploy_7](Images/AS_Group_Watchlist_Deploy_7.png)
-
-Repita el proceso para la conexión de Microsoft Sentinel.
-
-![AS_Group_Watchlist_Deploy_8](Images/AS_Group_Watchlist_Deploy_8.png)
 
 Al regresar a la página "**Overview**" de la aplicación lógica, ahora se puede ejecutar correctamente.
 
