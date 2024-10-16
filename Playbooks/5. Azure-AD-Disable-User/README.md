@@ -1,4 +1,4 @@
-# AS-Azure-AD-Disable-User
+# Azure-AD-Disable-User
 
 Para cualquier duda técnica consulte a dfernandezm@onesec.mx
 

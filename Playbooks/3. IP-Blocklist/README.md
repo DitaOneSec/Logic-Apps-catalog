@@ -1,4 +1,4 @@
-# AS-IP-Blocklist
+# IP-Blocklist
 
 En caso de presentar alguna duda, por favor, ponerse en contacto con dfernandezm@onesec.mx
 

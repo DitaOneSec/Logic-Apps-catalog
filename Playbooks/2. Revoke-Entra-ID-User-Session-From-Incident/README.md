@@ -1,4 +1,4 @@
-# AS-Revoke-Entra-ID-User-Session-From-Incident
+# Revoke-Entra-ID-User-Session-From-Incident
 
 En caso de presentar alguna duda, por favor, ponerse en contacto con dfernandezm@onesec.mx
 
