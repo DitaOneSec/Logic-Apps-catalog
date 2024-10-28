@@ -15,11 +15,7 @@ Este playbook está diseñado para ejecutarse desde un incidente de Microsoft Se
 
 Para configurar y desplegar este playbook:
 
-1. Abre tu navegador y asegúrate de estar conectado a tu espacio de trabajo de Microsoft Sentinel. En una pestaña separada, abre el enlace a nuestro playbook en el Repositorio de Seguridad de Accelerynt:
-
-   [Accelerynt Security GitHub Repository](https://github.com/Accelerynt-Security/AS-Azure-AD-Disable-User)
-
-2. Haz clic en el botón "**Desplegar en Azure**" ubicado abajo y te llevará a la plantilla de despliegue personalizada.
+1. Haz clic en el botón "**Desplegar en Azure**" ubicado abajo y te llevará a la plantilla de despliegue personalizada.
 
 3. En la sección **Detalles del proyecto**:
    - Selecciona la **Suscripción** y el **Grupo de recursos** desde las cajas desplegables a las que te gustaría que se desplegara el playbook.
